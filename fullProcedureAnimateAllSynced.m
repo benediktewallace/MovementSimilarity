@@ -7,7 +7,7 @@ for i = 1:length(data)
     data(i) = reorderMarkers(data(i)); %make sure that marer order is equal across the set, and remove right offset marker 
     data(i).data(1:400,:) = []; %removing first 400 frames
     data(i).nFrames = data(i).nFrames-400;
-    data(i).syncpoints = 0; 
+    data(i).syncpoint = 0; 
 end
 
 %%
