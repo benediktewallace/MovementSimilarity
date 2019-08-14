@@ -9,12 +9,12 @@ try
     %correctmarkers = importdata('correctMarkerOrderDrums.csv');
     correctmarkers = importdata(markerOrderTemplate);
 catch
-    disp('WARNING: correctMarkerOrder.csv not found. Using defaults.')
+    %disp('WARNING: correctMarkerOrder.csv not found. Using defaults.')
     %correctmarkers = {'RFHD'; 'LFHD'; 'LBHD'; 'RBHD'; 'C7'; 'LBK'; 'STRN'; 'RSHO'; 'LSHO'; 'RELB'; 'LELB'; 'RWRI'; 'LWRI'; 'RHAND'; 'LHAND'; 'RSB'; 'RST'; 'LSB'; 'LST'; 'RKNEE'; 'LKNEE'; 'RHEEL'; 'RTOE'; 'LHEEL'; 'LTOE'; 'HHL'; 'HHR'; 'HHT'; 'SNL'; 'SNR'; 'SNT'; 'BTB'; 'BTT'};
     macarenaMarkers = {'FHD'; 'RBHD'; 'LBHD'; 'CLAV'; 'C7';'RSHO'; 'RELB'; 'RWR';'RFIN';'LSHO'; 'LELB'; 'LWR'; 'LFIN'; 'T10';'ROOT'; 'RHIP'; 'LHIP'; 'RKNEE'; 'LKNEE';'RANKLE';'LANKLE';'RTOE'; 'LTOE'};
     %macarenaMarkersFull = {'FHD'; 'RBHD'; 'LBHD'; 'CLAV'; 'C7';'RSHO' ; 'RELB'  ; 'RWR';'RFIN' ;'LSHO' ; 'LELB'; 'LWR' ; 'LFIN'; 'RBACK'; 'T10';'ROOT'; 'RHIP'; 'LHIP' ; 'RKNEE'; 'LKNEE';'RANKLE';'LANKLE';'RTOE'; 'LTOE'};
 
-    correctmarkers = macarenaMarkers
+    correctmarkers = macarenaMarkers;
 end
 
 
