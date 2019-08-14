@@ -1,7 +1,7 @@
 clear,clc,close all
 
 
-data = readMocapData('../MacarenaData/');
+data = mcarrayRead('../MacarenaData/');
 
 
 %select only one recording for now...
